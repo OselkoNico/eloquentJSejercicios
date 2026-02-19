@@ -9,7 +9,7 @@ for(let x=0;x<size;x++){
 else if((x+y)%2==0){
 board+=" ";
 } else{
-    board+="X";
+    board+="#";
 } 
 }
 board+="\n";
