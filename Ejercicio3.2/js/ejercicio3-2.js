@@ -11,3 +11,11 @@ for (let x=0; x<size; x++){
     board+="\n";
 }
 console.log(board);
+
+/* Podría haber sido así, para hacerlo más compacto y las legible:
+
+function esBorde(x, y, size) {
+  return x === 0 || x === size-1 || y === 0 || y === size-1;
+}
+  board += esBorde(x, y, size) ? "X" : ".";
+*/
