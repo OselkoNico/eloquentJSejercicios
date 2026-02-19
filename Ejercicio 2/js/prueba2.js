@@ -1,13 +1,10 @@
-for (let numero = 1; numero <= 100; numero++) {
-    if (numero % 3 == 0){
-        console.log("Fizz");
+for (let a=1;a<=100;a++){
+    let palabra="";
+    if (a %3==0 && a %5==0) palabra="fizzbuzz";
+ else if(a %3==0) {
+        palabra="fizz";
     }
-    else if (numero % 5 == 0){
-        console.log("Buzz");
-    }
-    else if (numero % 3 == 0 && numero % 5 == 0){
-        console.log("FizzBuzz");
-    }else{
-    console.log(numero);
-    }
+else if (a %5==0) {palabra="buzz";
+}
+console.log(palabra || a);
 }
